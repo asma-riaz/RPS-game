@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Rock Paper Scissors</h1>
+
+<div class="card">
+
+<div class="choices">
+  <button onclick="play('rock')" class="img-btn">
+    <img src="rock.png" alt="Rock">
+    <span>Rock</span>
+  </button>
+
+  <button onclick="play('paper')" class="img-btn">
+    <img src="paper.png" alt="Paper">
+    <span>Paper</span>
+  </button>
+
+  <button onclick="play('scissors')" class="img-btn">
+    <img src="scissorr.png" alt="Scissors">
+    <span>Scissors</span>
+  </button>
+</div>
+
+
+<div id="result">Make your move!</div>
+
+<div class="scoreboard">
+  You: <span id="userScore">0</span> |
+  Bot: <span id="botScore">0</span>
+</div>
+
+<br>
+<button class="reset" onclick="resetGame()">Reset Game</button>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>📊 Analytics</h3>
+Rock: <span id="rockCount">0</span><br>
+Paper: <span id="paperCount">0</span><br>
+Scissors: <span id="scissorsCount">0</span>
+</div>
+
+<div class="card history" id="history">
+<h3>🕘 Match History</h3>
+</div>
+
+<div class="card">
+<h3>💾 Lifetime Stats</h3>
+Wins: <span id="lifeWins">0</span><br>
+Losses: <span id="lifeLosses">0</span><br>
+Draws: <span id="lifeDraws">0</span>
+</div>
+
+</div>
+
+<footer>Made by Asma Riaz</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
